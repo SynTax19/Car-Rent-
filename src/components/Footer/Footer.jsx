@@ -49,10 +49,10 @@ const Footer = () => {
               </h1>
             </div>
             <p className="footer__logo-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur, distinctio, itaque reiciendis ab cupiditate harum ex
-              quam veniam, omnis expedita animi quibusdam obcaecati mollitia?
-              Delectus et ad illo recusandae temporibus?
+              At our Car Rent Service, we strive to exceed your expectations and
+              provide you with a seamless and enjoyable car rental experience.
+              Rent a car with us and experience the convenience and freedom of
+              reliable transportation wherever your journey takes you.
             </p>
           </Col>
 
@@ -72,12 +72,14 @@ const Footer = () => {
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
               <h5 className="footer__link-title mb-4">Head Office</h5>
-              <p className="office__info">123 Zindabazar, Sylhet, Bangladesh</p>
-              <p className="office__info">Phone: +0995345875365</p>
+              <p className="office__info">
+                Hi-Tech Commerzone, Hyderabad, India
+              </p>
+              <p className="office__info">Phone: +91 9836546431</p>
 
-              <p className="office__info">Email: muhib5532@gmail.com</p>
+              <p className="office__info">Email: itus_developers@gmail.com</p>
 
-              <p className="office__info">Office Time: 10am - 7pm</p>
+              <p className="office__info">Office Time: 9am - 7pm</p>
             </div>
           </Col>
 
@@ -98,7 +100,7 @@ const Footer = () => {
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
                 <i class="ri-copyright-line"></i>Copyright {year}, Developed by
-                Muhibur Rahman. All rights reserved.
+                ItUS Developers. All rights reserved.
               </p>
             </div>
           </Col>
