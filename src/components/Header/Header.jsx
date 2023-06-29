@@ -99,7 +99,7 @@ const Header = () => {
                 </span>
                 <div className="header__location-content">
                   <h4>Monday to Saturday </h4>
-                  <h6>10am - 7pm</h6>
+                  <h6> 9am - 7pm</h6>
                 </div>
               </div>
             </Col>
