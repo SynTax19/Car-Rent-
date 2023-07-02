@@ -37,7 +37,7 @@ const Header = () => {
     <header className="header">
       {/* ============ header top ============ */}
       <div className="header__top">
-        <Container>
+        <Container className="p-3">
           <Row>
             <Col lg="6" md="6" sm="6">
               <div className="header__top__left">
@@ -49,18 +49,32 @@ const Header = () => {
             </Col>
 
             <Col lg="6" md="6" sm="6">
-              <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <Link to="#" className=" d-flex align-items-center gap-1">
-                  <i class="ri-login-circle-line"></i> Login
-                </Link>
+              {!localStorage.getItem("login") ? (
+                <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
+                  <Link to="#" className=" d-flex align-items-center gap-1">
+                    <i class="ri-login-circle-line"></i> Login
+                  </Link>
 
-                <Link
-                  to="/register"
-                  className=" d-flex align-items-center gap-1"
-                >
-                  <i class="ri-user-line"></i> Register
-                </Link>
-              </div>
+                  <Link
+                    to="/register"
+                    className=" d-flex align-items-center gap-1"
+                  >
+                    <i class="ri-user-line"></i> Register
+                  </Link>
+                </div>
+              ) : (
+                <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => {
+                      localStorage.removeItem("login");
+                      window.location.reload();
+                    }}
+                  >
+                    Logout
+                  </button>
+                </div>
+              )}
             </Col>
           </Row>
         </Container>
